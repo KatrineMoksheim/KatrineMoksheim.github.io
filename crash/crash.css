@@ -1,0 +1,71 @@
+
+#b1,#b2 {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: 2px solid greenyellow;
+}
+
+#hus1,#hus2,#hus3,#hus4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid pink;
+    background-color: grey;
+}
+
+#b1 { right: 260px; bottom: 20px;}
+#b2 {left: 260px; top: 20px;}
+#hus1 {left: 10px; top: 20px;}
+#hus2 {left: 10px; bottom: 20px;}
+#hus3 { right: 10px; top: 20px; }
+#hus4 { right: 10px; bottom: 20px;}
+
+#b1 {
+    background: url("bil.png");
+    background-size: contain;
+    animation: kjor 2s linear forwards, sving 0.5s 0.4s linear forwards;
+}
+
+#b2 {
+    background: url("bil.png");
+    animation: kjor2 2s linear forwards;
+    background-size: contain; 
+}
+
+@keyframes kjor {
+    0% { right: 260px; Bottom: 20px;  }
+    30% { right: 260px; Bottom: 50%;  }
+    99% {right: 70%; bottom: 50%;  }
+    100% {right: 70%; bottom: 50%; }
+}
+
+@keyframes sving {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(-90deg);}
+}
+
+@keyframes kjor2 {
+    0%{ left: 260px; top: 20px; opacity:1;} 
+    99% { left: 260px; top: 40%; opacity:1;}
+    100% {right: 70%; bottom: 50%; opacity:0;}
+}
+
+#explo { 
+    background: red;
+    width: 200px;
+    height: 200px;
+    position: absolute; 
+    left: 200px;
+    top: 40%;
+    background: url(eks.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: exp 2s linear forwards;
+}
+
+@keyframes exp {
+    0% { opacity:0;}
+    99% {opacity: 0;}
+    100% {opacity: 1;}
+}
