@@ -1,0 +1,17 @@
+#clear {
+    width: 130px;
+}
+
+.formstyle {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+input {
+    width: 40px;
+}
+
+#answers {
+    width: 130px;
+}
