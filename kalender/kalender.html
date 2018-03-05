@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="kalender.css">
+    <script src="kalender.js"></script>
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- buttons -->
+        <div id="buttons">
+            <button type="button" class="mybutton" id="-,year"> &lt; </button>
+            <button type="button" class="mybutton" id="+,year"> &gt; </button>
+            <button type="button" class="mybutton" id="-,monthN"> &lt; </button>
+            <button type="button" class="mybutton" id="+,monthN"> &gt; </button>
+        </div>
+        <!-- text display -->
+        <div class="mytext" id="year">2015</div>
+        <div class="mytext" id="month">oktober</div>
+
+        <!-- navn paa ukedager -->
+        <div id="ukedager"></div>
+
+        <!-- rammen rundt datoer (1..31) -->
+        <div id="datoer"></div>
+
+        <!-- en liten editor -->
+        <div id="tinyed"></div>
+
+    </div>
+    <script>
+        setup();
+    </script>
+
+</body>
+
+</html>

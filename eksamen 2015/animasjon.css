@@ -1,0 +1,57 @@
+#kart {
+    background-image: url("stortkartostfold.gif");
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#halden {
+    position: absolute;
+    border: solid 2px red; 
+    left: 40px;
+    top: 375px;
+    width: 200px;
+    height: 150px;
+    z-index: 5;
+
+}
+
+#fredrikstad {
+    position: absolute;
+    border: solid 2px yellow; 
+    left: 300px;
+    top: 475px;
+    width: 200px;
+    height: 150px;
+    z-index: 5;
+
+}
+
+#popup1,
+#popup2 {
+    position:absolute;
+    width: 4000px;
+    height: 3000px; 
+    top:0;
+    left:0;
+    display:none;
+}
+
+#popup2.vis,
+#popup1.vis {
+    display:block;
+    z-index: 9;
+    border: solid 2px paleturquoise;
+    background-color: white;
+}
+
+#video1, 
+#video2 {
+    width:600px;
+    height: 400px;
+    position: absolute;
+}

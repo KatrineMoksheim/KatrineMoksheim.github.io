@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="bestilling.css">
+        <script src="bestilling.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            By <select name="byer" id="byer">
+                <option value="">Velg by...</option>
+                <option value="">St.Petersburg</option>
+                <option value="">New York</option>
+                <option value="">Amsterdam</option>
+                <option value="">Roma</option>
+
+            </select>
+            <br>
+            Reiseperiode <input type="radio" name="peiode" value="sommer">Sommer<input type="radio" name="peiode" value="vinter">Vinter
+            <br>
+            Hotell <select name="hotell" id="hotell"></select>
+            <br>
+            Antall dobbelrom <input type="number" id="dobbel">
+            Antall enkelrom <input type="number" id="enkel">
+            <br>
+            Kulturpass (700kr) <input type="checkbox" id="kultur">
+
+            
+        </div>
+        <script>
+            setup();
+        </script>
+    
+    </body>
+</html>
+
+
